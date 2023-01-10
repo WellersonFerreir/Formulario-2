@@ -2,6 +2,12 @@
     display: none;
 }
 
+button:hover{
+    cursor: pointer;
+    background-color: rgb(251, 255, 0);
+}
+
+
 .conteiner {
     width: 100vw;
     height: 100vh;
@@ -12,7 +18,7 @@
 .input {
     width: 90%;
     height: 90%;
-    background: #fff;
+    background: rgb(230, 230, 230);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +37,7 @@
     align-items: center;
     margin: 1rem 0;
     width: 300px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--roxo);
 }
 
 .cabecalho button{
@@ -44,30 +50,34 @@
     padding: 3.5px 20px;
     border-radius: 5px;
     box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
-    background-color: rgb(247, 250, 64);
+    background-color: var(--amarelo);
     margin-bottom: 8px;
+    border: 0.1px solid;
 }
 
 .cabecalho__titulo{
     margin-bottom: 15px;
-    color: rgb(149, 64, 247);
+    color: var(--roxo);
 }
 
-.dados{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
 .dados input{
-    font-size: 15px;
-    margin: 20px 0;
+    font-size: 18px;
+    width: 303px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: none;
+    color: rgb(211, 118, 252);
+    background-color: rgb(240, 240, 240);
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .dados label{
     font-size: 15px;
     display: flex;
     align-items: center;
+    color: var(--roxo);
+    font-weight: 700;
 } 
 
 .genero{
@@ -78,14 +88,28 @@
 .genero__titulo{
     font-size: 20px;
     margin: 1rem 0 0.3rem 0;
+    color: var(--roxo);
 }
 
 .genero__input{
     display: flex;
     margin: 0.3rem 0;
+    color: var(--roxo);
 }
 
 .genero__input input{
     margin-right: 0.3rem;
+}
+
+.continuar{
+    font-size: 18px;
+    padding: 3.5px 108px;
+    margin-top: 1rem;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
+    background-color: var(--amarelo);
+    color: var(--roxo);
+    font-weight: 700;
+    border-radius: 5px;
+    border: 0.1px solid;
 }
 
