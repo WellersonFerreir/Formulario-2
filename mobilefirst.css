@@ -1,0 +1,91 @@
+.img-form{
+    display: none;
+}
+
+.conteiner {
+    width: 100vw;
+    height: 100vh;
+    background: hsl(211, 100%, 50%);
+    display: flex;
+}
+
+.input {
+    width: 90%;
+    height: 90%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.input form{
+    width: 90%;
+    height: 90%;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 1rem 0;
+    width: 300px;
+    border-bottom: 1px solid #000;
+}
+
+.cabecalho button{
+    font-weight: 700;
+    color: rgb(149, 64, 247);
+}
+
+.cabecalho__entrar{
+    font-size: 18px;
+    padding: 3.5px 20px;
+    border-radius: 5px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.3);
+    background-color: rgb(247, 250, 64);
+    margin-bottom: 8px;
+}
+
+.cabecalho__titulo{
+    margin-bottom: 15px;
+    color: rgb(149, 64, 247);
+}
+
+.dados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dados input{
+    font-size: 15px;
+    margin: 20px 0;
+}
+
+.dados label{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+} 
+
+.genero{
+    display: flex;
+    flex-direction: column;
+}
+
+.genero__titulo{
+    font-size: 20px;
+    margin: 1rem 0 0.3rem 0;
+}
+
+.genero__input{
+    display: flex;
+    margin: 0.3rem 0;
+}
+
+.genero__input input{
+    margin-right: 0.3rem;
+}
+
