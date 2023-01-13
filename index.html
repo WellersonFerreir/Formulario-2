@@ -15,25 +15,47 @@
 </head>
 
 <body>
+
   <div class="conteiner">
+    <!-- imagem para estilo desktop -->
     <div class="img-form">
+      <!-- formulario -->
     </div>
-    <div class="input">
-      <form action="#">
+      <form action="#" class="form">
         <div class="cabecalho">
           <h1 class="cabecalho__titulo">Cadastre-se</h1>
           <button type="submit" class="cabecalho__entrar">Entrar</button>
         </div>
-        <div class="dados">
-          <label for="pnome" id="pnome" class="dados__input" >Nome</label>
-          <input type="text" id="pnome" class="dados__input" placeholder="Digite seu nome" required>
-          <label for="snome" id="snome" class="dados__input">Sobrenome </label>
-          <input type="text" id="snome" class="dados__input" placeholder="Digite seu sobrenome" required>
-          <label for="email" id="email" class="dados__input">E-mail </label>
-          <input type="email" id="email" class="dados__input" placeholder="Digite seu e-mail" required>
-          <label for="aniversario" id="birthday" class="dados__input">Nascimento</label>
-          <input type="date" id="birthday" name="birthday" id="nascimento" required>
+
+        <div class="input-box sucess">
+
+          <label for="pnome" id="pnome">Nome</label>
+          <input type="text" id="pnome" placeholder="Digite seu nome" required>
+          <i><img src="./icones/error-icon.svg" alt="icone de erro" class="img-error"></i>
+          <i><img src="./icones/success-icon.svg" alt="icone de correto" class="img-sucess"></i>
         </div>
+
+        <div class="input-box">
+          <label for="snome" id="snome">Sobrenome </label>
+          <input type="text" id="snome" placeholder="Digite seu sobrenome" required>
+          <i><img src="./icones/error-icon.svg" alt="icone de erro" class="img-error"></i>
+          <i><img src="./icones/success-icon.svg" alt="icone de correto" class="img-sucess"></i>
+        </div>
+
+        <div class="input-box">
+          <label for="email" id="email">E-mail </label>
+          <input type="email" id="email" placeholder="Digite seu e-mail" required>
+          <i><img src="./icones/error-icon.svg" alt="icone de erro" class="img-error"></i>
+          <i><img src="./icones/success-icon.svg" alt="icone de correto" class="img-sucess"></i>
+        </div>
+
+        <div class="input-box">
+          <label for="aniversario" id="birthday">Nascimento</label>
+          <input type="date" id="birthday" name="birthday" id="nascimento" required>
+          <i><img src="./icones/error-icon.svg" alt="icone de erro" class="img-error"></i>
+          <i><img src="./icones/success-icon.svg" alt="icone de correto" class="img-sucess"></i>
+        </div>
+
         <div class="genero">
           <h6 class="genero__titulo">Gênero</h6>
           <div class="genero__input">
@@ -52,14 +74,13 @@
             <input type="radio" id="ndizer" name="genero">
             <label for="genero" id="ndizer">Prefiro não dizer</label>
           </div>
-          <div>
-            <button class="continuar">Continuar</button>
-          </div>
+        </div>
+        <div>
+          <button class="continuar">Continuar</button>
         </div>
       </form>
-    </div>
   </div>
-  <script src="main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
