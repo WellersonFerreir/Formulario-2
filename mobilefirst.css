@@ -118,3 +118,39 @@ button:hover{
 }
 
 
+.input-box.success input {
+    border: 3px solid #4ECA64;
+}
+
+.input-box.error input {
+    border: 3px solid #DB5A5A;
+}
+
+.input-box.error i.img-error {
+    visibility: visible;
+}
+
+.input-box.success i.img-success {
+    visibility: visible;
+}
+
+.input-box.error small{
+    color: #DB5A5A;
+    visibility: visible;
+}
+
+.input-box i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.input-box small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+
+}
+
