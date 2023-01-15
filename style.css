@@ -21,18 +21,4 @@ img {
         display: block;
     }
 
-    .container {
-        width: 80%;
-    }
-
-    img {
-        width: 50%;
-        height: auto;
-        max-width: 28.5rem;
-        border-radius: 15px 0px 0px 15px;
-    }
-    .form{
-        width: 50%;
-        border-radius: 1px;
-    }
 }
