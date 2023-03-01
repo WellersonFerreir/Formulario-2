@@ -119,7 +119,7 @@ body{
     background-color: rgb(35, 35, 224);
 }
 
-.botao-continuar button a{
+.botao-continuar button {
     font-size: 1rem;
     text-decoration: none;
     color: rgb(255, 255, 255);

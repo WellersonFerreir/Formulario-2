@@ -38,29 +38,29 @@
           </div>
           <div class="input-box">
             <label for="lastname">Sobrenome</label>
-            <input type="text" name="lastname" placeholder="Digite seu sobrenome" class="required">
-            <span class="mensagem-erro"></span>
+            <input type="text" name="lastname" placeholder="Digite seu sobrenome" class="required" oninput="lastnameValidate()">
+            <span class="mensagem-erro">O sobrenome precisa ter no minimo 3 caracteres</span>
           </div>
           <div class="input-box">
             <label for="email">E-mail</label>
             <input type="email" name="email" placeholder="Digite seu email" class="required" oninput="emailValidate()">
-            <span class="mensagem-erro"></span>
+            <span class="mensagem-erro">O e-mail não esta correto.</span>
           </div>
           <div class="input-box">
             <label for="number">Celular</label>
             <input type="tel" name="number" placeholder="(xx)x-xxxx-xxxx" class="required" maxlength="11"
-            pattern="\(?\d{2}\)? \d{4,5}\-?\d{4}">
-            <span class="mensagem-erro"></span>
+            pattern="\(?\d{2}\)? \d{4,5}\-?\d{4}" oninput="phoneValidate()">
+            <span class="mensagem-erro">O número não esta correto</span>
           </div>
           <div class="input-box">
             <label for="password">Senha</label>
-            <input type="password" name="password" placeholder="Digite sua senha" class="required">
-            <span class="mensagem-erro"></span>
+            <input type="password" name="password" placeholder="Digite sua senha" class="required" oninput="mainPasswordValidate()">
+            <span class="mensagem-erro">Digite no minimo 8 caracteres</span>
           </div>
           <div class="input-box">
             <label for="password">Confirme sua Senha</label>
-            <input type="password" name="confirmpassword" placeholder="Sua senha novamente" class="required">
-            <span class="mensagem-erro"></span>
+            <input type="password" name="confirmpassword" placeholder="Sua senha novamente" class="required" oninput="comfirmPasswordValidate()">
+            <span class="mensagem-erro">As senhas devem ser iguais</span>
           </div>
         </div>
         <div class="genero">
@@ -85,8 +85,8 @@
           </div>
         </div>
         <div class="botao-continuar">
-          <button>
-            <a href="#">Continuar</a>
+          <button type="submit">
+            Continuar
           </button>
         </div>
       </form>
