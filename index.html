@@ -5,75 +5,94 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>#2</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mobilefirst.css">
+  <title>#1</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsivo.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
   <div class="conteiner">
-      <img src="./img/img-form.svg" alt="imagem de um cachorro" class="img box">
-      <form action="#" class="form box" id="form">
-        <div class="cabecalho">
-          <h1 class="cabecalho__titulo">Cadastre-se</h1>
-          <button type="submit" class="cabecalho__entrar">Entrar</button>
+    <div class="form__img img-grid">
+      <img src="./img/img-cadastro.svg" alt="imagem de cachorro" class="stilo__img">
+    </div>
+    <div class="form form-grid">
+      <form action="#" id="form">
+        <div class="form__cadastro__cabecalho">
+          <div class="titulo">
+            <h1>Cadastre-se</h1>
+          </div>
+          <div class="botao-entrar">
+            <button class="botao-estilo"><a href="#">Entrar</a></button>
+          </div>
         </div>
-
-        <div class="input-box ">
-
-          <label for="pnome" id="pnome">Nome</label>
-          <input type="text" id="name" placeholder="Digite seu nome">
-
+        <div class="input">
+          <div class="input-box">
+            <label for="firstname">Primeiro nome</label>
+            <input type="text" name="firstname" placeholder="Digite seu primeiro nome" class="required"
+            oninput="nameValidate()">
+            <span class="mensagem-erro">O nome precisa ter no minimo 3 caracteres</span>
+          </div>
+          <div class="input-box">
+            <label for="lastname">Sobrenome</label>
+            <input type="text" name="lastname" placeholder="Digite seu sobrenome" class="required">
+            <span class="mensagem-erro"></span>
+          </div>
+          <div class="input-box">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="Digite seu email" class="required" oninput="emailValidate()">
+            <span class="mensagem-erro"></span>
+          </div>
+          <div class="input-box">
+            <label for="number">Celular</label>
+            <input type="tel" name="number" placeholder="(xx)x-xxxx-xxxx" class="required" maxlength="11"
+            pattern="\(?\d{2}\)? \d{4,5}\-?\d{4}">
+            <span class="mensagem-erro"></span>
+          </div>
+          <div class="input-box">
+            <label for="password">Senha</label>
+            <input type="password" name="password" placeholder="Digite sua senha" class="required">
+            <span class="mensagem-erro"></span>
+          </div>
+          <div class="input-box">
+            <label for="password">Confirme sua Senha</label>
+            <input type="password" name="confirmpassword" placeholder="Sua senha novamente" class="required">
+            <span class="mensagem-erro"></span>
+          </div>
         </div>
-
-        <div class="input-box">
-          <label for="snome" id="snome">Sobrenome </label>
-          <input type="text" id="sname" placeholder="Digite seu sobrenome">
-
-        </div>
-
-        <div class="input-box">
-          <label for="email" id="email">E-mail </label>
-          <input type="email" id="email" placeholder="Digite seu e-mail">
-
-        </div>
-
-        <div class="input-box">
-          <label for="aniversario" id="birthday">Nascimento</label>
-          <input type="date" id="nasc" name="birthday" id="nascimento">
-
-        </div>
-
         <div class="genero">
-          <h6 class="genero__titulo">Gênero</h6>
-          <div class="genero__input">
-            <input type="radio" id="masc" name="genero">
-            <label for="genero" id="masc">Masculino</label>
+          <div class="genero__titulo">
+            <h6>Gênero</h6>
           </div>
-          <div class="genero__input">
-            <input type="radio" id="fem" name="genero">
-            <label for="genero" id="fem">Feminino</label>
+          <div class="genero__botao">
+            <input type="radio" id="feminino" name="gender">
+            <label for="feminino">Feminino</label>
           </div>
-          <div class="genero__input">
-            <input type="radio" id="outro" name="genero">
-            <label for="genero" id="outro">Outro</label>
+          <div class="genero__botao">
+            <input type="radio" id="masculino" name="gender">
+            <label for="masculino">Masculino</label>
           </div>
-          <div class="genero__input">
-            <input type="radio" id="ndizer" name="genero">
-            <label for="genero" id="ndizer">Prefiro não dizer</label>
+          <div class="genero__botao">
+            <input type="radio" id="outro" name="gender">
+            <label for="outro">Outro</label>
+          </div>
+          <div class="genero__botao">
+            <input type="radio" id="prefironao" name="gender">
+            <label for="prefironao">Prefiro não dizer</label>
           </div>
         </div>
-        <div>
-          <button class="continuar" id="continuar">Continuar</button>
+        <div class="botao-continuar">
+          <button>
+            <a href="#">Continuar</a>
+          </button>
         </div>
       </form>
+    </div>
   </div>
-  <script src="./js/main.js"></script>
 </body>
+<script src="./js/main.js"></script>
 
 </html>

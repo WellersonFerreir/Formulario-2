@@ -1,28 +1,35 @@
-document.getElementById("continuar").addEventListener("click", function () {
-    let name = document.getElementById("name").value;
-    if (!name) {
-        alert("O campo nome deve ser preenchido.");
-    }
-});
+const camposDoFormulario = document.querySelectorAll(".required");
+const span = document.querySelectorAll(".mensagem-erro");
+const form = document.getElementById("form");
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+const phoneRegex = /^\d{10}$/;
 
-document.getElementById("continuar").addEventListener("click", function () {
-    let sname = document.getElementById("sname").value;
-    if (!sname) {
-        alert("O campo sobrenome deve ser preenchido.");
-    }
-});
 
-document.getElementById("continuar").addEventListener("click", function () {
-    let email = document.getElementById("email").value;
-    if (!email) {
-        alert("O campo email deve ser preenchido.");
-    }
-});
+function setError(index) {
+  camposDoFormulario[index].style.border = '2px solid #e63636';
+  span[index].style.display = 'block';
+}
 
-document.getElementById("continuar").addEventListener("click", function () {
-    let nasc = document.getElementById("nasc").value;
-    if (!nasc) {
-        alert("O campo data de nascimento deve ser preenchido.");
-    }
-});
+function removeError(index) {
+  camposDoFormulario[index].style.border = '';
+  span[index].style.display = 'none';
+}
 
+function nameValidate() {
+  if (camposDoFormulario[0].value.length < 3) {
+
+    setError(0);
+
+  } else {
+    removeError(0);
+  }
+}
+
+function emailValidate(){
+
+  if (emailRegex.test(camposDoFormulario[2].value)){
+    console.log('vlaido');
+  }else{
+    console.log('nao');
+  }
+}
