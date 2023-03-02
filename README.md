@@ -21,10 +21,9 @@ JavaScript<br>
 
 
 <h3>Video de apresentação do projeto:</h3>
-
+<span> ANTES </span>
 <img src="./readme/gif-antes.gif" alt="gif apresentação">
-<style>
-  img {
-  witdh: 10px
-  }
-</style>
+
+<span> DEPOIS </span>
+<img src="./readme/gif-depois.gif" alt="gif apresentação">
+
