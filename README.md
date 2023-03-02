@@ -22,4 +22,9 @@ JavaScript<br>
 
 <h3>Video de apresentação do projeto:</h3>
 
-<img src="./readme/gif-antes.gif" alt="gif apresentação" style:"width:10px">
+<img src="./readme/gif-antes.gif" alt="gif apresentação">
+<style>
+  img {
+  witdh: 10px
+  }
+</style>
